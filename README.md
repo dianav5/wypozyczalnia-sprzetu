@@ -67,7 +67,6 @@ Program.cs – uruchamia aplikację i pokazuje scenariusz działania
 W projekcie starano się zachować kohezję poprzez przypisanie każdej klasie
 jednej konkretnej odpowiedzialności.
 
-Na przykład:
 - RentalService zajmuje się tylko operacjami wypożyczeń
 - PenaltyService odpowiada tylko za obliczanie kar
 - ReportService odpowiada tylko za raporty
