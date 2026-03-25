@@ -9,7 +9,7 @@ var penaltyService = new PenaltyService();
 var rentalService = new RentalService(rentals, penaltyService);
 var reportService = new ReportService();
 
-Console.WriteLine("=== START SYSTEMU WYPOŻYCZALNI ===");
+Console.WriteLine("=== SYSTEM WYPOŻYCZALNI SPRZĘTU ===");
 
 // Tworzenie sprzętu
 var laptop = new Laptop("E1", "Dell Latitude", "i7", 16);
