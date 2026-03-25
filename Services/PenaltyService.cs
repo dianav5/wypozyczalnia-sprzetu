@@ -1,3 +1,4 @@
+// Service responsible for calculating penalties
 namespace Wypozyczalnia.Services;
 
 public class PenaltyService
