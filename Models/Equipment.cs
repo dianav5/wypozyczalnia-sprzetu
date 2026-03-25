@@ -1,5 +1,11 @@
 namespace Wypozyczalnia.Models;
 
+public enum EquipmentStatus
+{
+    Available,
+    Rented,
+    Unavailable
+}
 public abstract class Equipment
 {
     public string Id { get; set; }
