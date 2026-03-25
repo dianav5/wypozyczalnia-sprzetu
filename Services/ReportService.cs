@@ -70,4 +70,16 @@ public class ReportService
             );
         }
     }
+    public void PrintUsers(List<User> users)
+    {
+        Console.WriteLine("=== Lista użytkowników ===");
+
+        foreach (var user in users)
+        {
+            Console.WriteLine(
+                $"ID: {user.Id}, " +
+                $"Name: {user.FirstName} {user.LastName}"
+            );
+        }
+    }
 }

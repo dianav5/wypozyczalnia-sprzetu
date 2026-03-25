@@ -58,4 +58,6 @@ Console.WriteLine($"Kara za spóźnienie: {penalty} zł");
 reportService.PrintActiveRentals(rentals);
 reportService.PrintOverdueRentals(rentals);
 
+reportService.PrintUsers(users);
+
 Console.WriteLine("\n=== KONIEC ===");
