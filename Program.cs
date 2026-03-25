@@ -44,6 +44,18 @@ catch (Exception ex)
 // Wyświetlenie dostępnego sprzętu
 reportService.PrintAvailableEquipment(equipments);
 
+// Symulacja zwrotu w terminie
+Console.WriteLine("\nWypożyczanie projektora przez pracownika...");
+rentalService.RentEquipment(employee, projector, 5);
+
+var onTimeRental = rentals.Last();
+onTimeRental.DueDate = DateTime.Now.AddDays(2);
+
+Console.WriteLine("\nZwrot sprzętu w terminie...");
+var onTimePenalty = rentalService.ReturnEquipment(onTimeRental.Id);
+
+Console.WriteLine($"Kara za zwrot w terminie: {onTimePenalty} zł");
+
 // Symulacja przeterminowania
 var rental = rentals.First();
 rental.DueDate = DateTime.Now.AddDays(-2);
