@@ -15,6 +15,10 @@ public class RentalService
 
     public void RentEquipment(User user, Equipment equipment, int days)
     {
+        if (days <= 0)
+        {
+            throw new Exception("Liczba dni musi być większa od 0.");
+        }
         if (!equipment.IsAvailable)
         {
             throw new Exception("Sprzet niedostepny!");
